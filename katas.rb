@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
 
+# Version courante ruby (max sur Debian 9)
+# irb 0.9.6(09/06/30)
+
 # Commande d'exécution (dans le répertoire courant)
 #ruby katas.rb
 
