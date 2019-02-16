@@ -1,0 +1,391 @@
+Le 16/02/2019 16:31: accès au serveur: localhost: 0.065 ms
+Le 16/02/2019 16:31:54: accès au serveur: localhost: 0.025 ms
+Le 16/02/2019 16:31:55: accès au serveur: localhost: 0.0424 ms
+Le 16/02/2019 16:31:56: accès au serveur: localhost: 0.0489 ms
+Le 16/02/2019 16:31:57: accès au serveur: localhost: 0.0522 ms
+Le 16/02/2019 16:31:58: accès au serveur: localhost: 0.0538 ms
+Le 16/02/2019 16:31:59: accès au serveur: localhost: 0.055 ms
+Le 16/02/2019 16:39:07: accès au serveur: localhost: 0.019 ms
+Le 16/02/2019 16:39:08: accès au serveur: localhost: 0.0405 ms
+Le 16/02/2019 16:39:42: accès au serveur: localhost: 0.021 ms
+Le 16/02/2019 16:39:43: accès au serveur: localhost: 0.0425 ms
+Le 16/02/2019 16:42:02: accès au serveur: localhost: 0.021 ms
+Le 16/02/2019 16:42:03: accès au serveur: localhost: 0.05 ms
+Le 16/02/2019 16:42:04: accès au serveur: localhost: 0.054 ms
+Le 16/02/2019 16:42:05: accès au serveur: localhost: 0.0567 ms
+Le 16/02/2019 16:42:06: accès au serveur: localhost: 0.0590 ms
+Le 16/02/2019 16:42:07: accès au serveur: localhost: 0.0590 ms
+Le 16/02/2019 16:44:01: accès au serveur: localhost: 0.019 ms
+Le 16/02/2019 16:44:02: accès au serveur: localhost: 0.041 ms
+Le 16/02/2019 16:44:03: accès au serveur: localhost: 0.0483 ms
+Le 16/02/2019 16:44:04: accès au serveur: localhost: 0.0517 ms
+Le 16/02/2019 16:44:05: accès au serveur: localhost: 0.0538 ms
+Le 16/02/2019 16:44:06: accès au serveur: localhost: 0.0545 ms
+Le 16/02/2019 16:44:07: accès au serveur: localhost: 0.0618 ms
+Le 16/02/2019 16:44:08: accès au serveur: localhost: 0.0618 ms
+Le 16/02/2019 16:44:09: accès au serveur: localhost: 0.062 ms
+Le 16/02/2019 16:44:10: accès au serveur: localhost: 0.062 ms
+Le 16/02/2019 16:44:11: accès au serveur: localhost: 0.0618 ms
+Le 16/02/2019 16:44:22: accès au serveur: localhost: 0.0633 ms
+Le 16/02/2019 16:44:23: accès au serveur: localhost: 0.0638 ms
+Le 16/02/2019 16:44:24: accès au serveur: localhost: 0.0636 ms
+Le 16/02/2019 16:46:28: accès au serveur: localhost: 0.02 ms
+Le 16/02/2019 16:46:29: accès au serveur: localhost: 0.0415 ms
+Le 16/02/2019 16:46:30: accès au serveur: localhost: 0.0486 ms
+Le 16/02/2019 16:46:31: accès au serveur: localhost: 0.0522 ms
+Le 16/02/2019 16:46:32: accès au serveur: localhost: 0.0544 ms
+Le 16/02/2019 16:46:33: accès au serveur: localhost: 0.0556 ms
+Le 16/02/2019 16:46:34: accès au serveur: localhost: 0.0628 ms
+Le 16/02/2019 16:46:35: accès au serveur: localhost: 0.0625 ms
+Le 16/02/2019 16:46:36: accès au serveur: localhost: 0.0636 ms
+Le 16/02/2019 16:46:37: accès au serveur: localhost: 0.064 ms
+Le 16/02/2019 16:46:38: accès au serveur: localhost: 0.064 ms
+Le 16/02/2019 16:46:39: accès au serveur: localhost: 0.0645 ms
+Le 16/02/2019 16:46:40: accès au serveur: localhost: 0.0645 ms
+Le 16/02/2019 16:46:41: accès au serveur: localhost: 0.0596 ms
+Le 16/02/2019 16:46:42: accès au serveur: localhost: 0.0583 ms
+Le 16/02/2019 16:46:43: accès au serveur: localhost: 0.0576 ms
+Le 16/02/2019 16:46:44: accès au serveur: localhost: 0.0578 ms
+Le 16/02/2019 16:46:45: accès au serveur: localhost: 0.0578 ms
+Le 16/02/2019 16:46:46: accès au serveur: localhost: 0.0575 ms
+Le 16/02/2019 16:46:47: accès au serveur: localhost: 0.062 ms
+Le 16/02/2019 16:46:48: accès au serveur: localhost: 0.0615 ms
+Le 16/02/2019 16:46:49: accès au serveur: localhost: 0.0623 ms
+Le 16/02/2019 16:46:50: accès au serveur: localhost: 0.065 ms
+Le 16/02/2019 16:46:51: accès au serveur: localhost: 0.0645 ms
+Le 16/02/2019 16:48:07: accès au serveur: localhost: 0.021 ms
+Le 16/02/2019 16:48:08: accès au serveur: localhost: 0.0415 ms
+Le 16/02/2019 16:48:09: accès au serveur: localhost: 0.0486 ms
+Le 16/02/2019 16:48:10: accès au serveur: localhost: 0.0522 ms
+Le 16/02/2019 16:48:11: accès au serveur: localhost: 0.0546 ms
+Le 16/02/2019 16:48:12: accès au serveur: localhost: 0.056 ms
+Le 16/02/2019 16:48:13: accès au serveur: localhost: 0.063 ms
+Le 16/02/2019 16:48:14: accès au serveur: localhost: 0.063 ms
+Le 16/02/2019 16:48:15: accès au serveur: localhost: 0.063 ms
+Le 16/02/2019 16:48:16: accès au serveur: localhost: 0.0631 ms
+Le 16/02/2019 16:48:17: accès au serveur: localhost: 0.064 ms
+Le 16/02/2019 16:48:18: accès au serveur: localhost: 0.0641 ms
+Le 16/02/2019 16:48:19: accès au serveur: localhost: 0.0641 ms
+Le 16/02/2019 16:48:30: accès au serveur: localhost: 0.035 ms
+Le 16/02/2019 16:48:31: accès au serveur: localhost: 0.054 ms
+Le 16/02/2019 16:48:32: accès au serveur: localhost: 0.068 ms
+Le 16/02/2019 16:51:50: accès au serveur: localhost: 0.034 ms
+Le 16/02/2019 16:51:51: accès au serveur: localhost: 0.048 ms
+Le 16/02/2019 16:51:52: accès au serveur: localhost: 0.0603 ms
+Le 16/02/2019 16:52:44: accès au serveur: localhost: 0.02 ms
+Le 16/02/2019 16:52:45: accès au serveur: localhost: 0.0405 ms
+Le 16/02/2019 16:52:46: accès au serveur: localhost: 0.021 ms
+Le 16/02/2019 16:52:47: accès au serveur: localhost: 0.0415 ms
+Le 16/02/2019 16:52:48: accès au serveur: localhost: 0.0483 ms
+16/02/2019 16:54:09: serveur: localhost: 0.02 ms
+16/02/2019 16:54:10: serveur: localhost: 0.041 ms
+16/02/2019 16:54:11: serveur: localhost: 0.0483 ms
+16/02/2019 16:54:13: serveur: localhost: 0.0520 ms
+16/02/2019 16:54:14: serveur: localhost: 0.0544 ms
+Le 16/02/2019 16:55:51
+: serveur: localhost: 0.021 ms
+Le 16/02/2019 16:55:52
+: serveur: localhost: 0.042 ms
+Le 16/02/2019 16:56:53: serveur: localhost: 0.042 ms
+Le 16/02/2019 16:56:54: serveur: localhost: 0.0525 ms
+Le 16/02/2019 16:56:55: serveur: localhost: 0.0576 ms
+Le 16/02/2019 17:09:09: serveur: localhost: 0.021 ms
+Le 16/02/2019 17:09:10: serveur: localhost: 0.042 ms
+Le 16/02/2019 17:09:11: serveur: localhost: 0.0486 ms
+Le 16/02/2019 17:09:12: serveur: localhost: 0.0522 ms
+Le 16/02/2019 17:22:22: serveur: localhost: 0.034 ms
+Le 16/02/2019 17:22:35: serveur: localhost: 0.024 ms
+Le 16/02/2019 17:23:54: serveur: localhost: 0.034 ms
+Le 16/02/2019 17:23:55: serveur: localhost: 0.049 ms
+Le 16/02/2019 17:23:56: serveur: localhost: 0.0536 ms
+Le 16/02/2019 17:23:57: serveur: localhost: 0.056 ms
+Le 16/02/2019 17:24:19: serveur: localhost: 0.021 ms
+Le 16/02/2019 17:24:41: serveur: localhost: 0.023 ms
+Le 16/02/2019 17:24:42: serveur: localhost: 0.0435 ms
+Le 16/02/2019 17:24:43: serveur: localhost: 0.0479 ms
+Le 16/02/2019 17:26:39: serveur: localhost: 0.034 ms
+Le 16/02/2019 17:26:40: serveur: localhost: 0.0485 ms
+Le 16/02/2019 17:29:00: serveur: localhost: 0.033 ms
+Le 16/02/2019 17:29:02: serveur: localhost: 0.0475 ms
+Le 16/02/2019 17:29:57: serveur: localhost: 0.021 ms
+Le 16/02/2019 17:29:58: serveur: localhost: 0.042 ms
+Le 16/02/2019 17:32:30: serveur: localhost: 0.02 ms
+Le 16/02/2019 17:33:12: serveur: localhost: 0.021 ms
+Le 16/02/2019 17:33:29: serveur: localhost: 0.021 ms
+Le 16/02/2019 17:33:39: serveur: localhost: 0.021 ms
+Le 16/02/2019 17:34:08: serveur: localhost: 0.023 ms
+Le 16/02/2019 17:34:15: serveur: localhost: 0.026 ms
+Le 16/02/2019 17:39:20: serveur: localhost: 0.021 ms
+Le 16/02/2019 17:40:04: serveur: localhost: 0.029 ms
+Le 16/02/2019 17:40:51: serveur: localhost: 0.021 ms
+Le 16/02/2019 17:41:14: serveur: localhost: 0.026 ms
+Le 16/02/2019 17:45:55: serveur: localhost: 0.024 ms
+Le 16/02/2019 17:46:44: serveur: localhost: 0.021 ms
+Le 16/02/2019 17:47:22: serveur: localhost: 0.022 ms
+Le 16/02/2019 17:49:53: serveur: localhost: 0.021 ms
+Le 16/02/2019 17:49:54: serveur: localhost: 0.042 ms
+Le 16/02/2019 17:49:55: serveur: localhost: 0.0486 ms
+Le 16/02/2019 17:49:56: serveur: localhost: 0.058 ms
+Le 16/02/2019 17:50:27: serveur: localhost: 0.048 ms
+Le 16/02/2019 17:51:10: serveur: localhost: 0.021 ms
+Le 16/02/2019 17:51:56: serveur: localhost: 0.035 ms
+Le 16/02/2019 17:52:16: serveur: localhost: 0.021 ms
+Le 16/02/2019 17:52:17: serveur: localhost: 0.042 ms
+Le 16/02/2019 17:52:18: serveur: localhost: 0.0486 ms
+Le 16/02/2019 17:52:19: serveur: localhost: 0.0522 ms
+Le 16/02/2019 17:52:20: serveur: localhost: 0.0586 ms
+Le 16/02/2019 17:52:21: serveur: localhost: 0.0591 ms
+Le 16/02/2019 17:52:22: serveur: localhost: 0.066 ms
+Le 16/02/2019 17:52:23: serveur: localhost: 0.066 ms
+Le 16/02/2019 17:52:24: serveur: localhost: 0.066 ms
+Le 16/02/2019 17:52:37: serveur: localhost: 0.02 ms
+Le 16/02/2019 17:52:38: serveur: localhost: 0.0495 ms
+Le 16/02/2019 17:52:39: serveur: localhost: 0.054 ms
+Le 16/02/2019 17:52:40: serveur: localhost: 0.055 ms
+Le 16/02/2019 17:52:41: serveur: localhost: 0.0566 ms
+Le 16/02/2019 17:52:42: serveur: localhost: 0.0575 ms
+Le 16/02/2019 17:52:43: serveur: localhost: 0.065 ms
+Le 16/02/2019 17:52:44: serveur: localhost: 0.062 ms
+Le 16/02/2019 17:52:45: serveur: localhost: 0.0618 ms
+Le 16/02/2019 17:52:46: serveur: localhost: 0.0625 ms
+Le 16/02/2019 17:52:47: serveur: localhost: 0.0663 ms
+Le 16/02/2019 17:52:48: serveur: localhost: 0.0661 ms
+Le 16/02/2019 17:52:49: serveur: localhost: 0.0658 ms
+Le 16/02/2019 17:52:50: serveur: localhost: 0.0656 ms
+Le 16/02/2019 17:52:51: serveur: localhost: 0.067 ms
+Le 16/02/2019 17:52:52: serveur: localhost: 0.0710 ms
+Le 16/02/2019 17:52:53: serveur: localhost: 0.0671 ms
+Le 16/02/2019 17:52:54: serveur: localhost: 0.0675 ms
+Le 16/02/2019 17:52:55: serveur: localhost: 0.0681 ms
+Le 16/02/2019 17:53:36: serveur: localhost: 0.02 ms
+Le 16/02/2019 17:53:45: serveur: localhost: 0.046 ms
+Le 16/02/2019 17:54:05: serveur: localhost: 0.022 ms
+Le 16/02/2019 17:54:06: serveur: localhost: 0.0424 ms
+Le 16/02/2019 17:54:07: serveur: localhost: 0.0489 ms
+Le 16/02/2019 17:54:08: serveur: localhost: 0.0579 ms
+Le 16/02/2019 17:54:09: serveur: localhost: 0.059 ms
+Le 16/02/2019 17:54:33: serveur: localhost: 0.021 ms
+Le 16/02/2019 17:54:34: serveur: localhost: 0.0415 ms
+Le 16/02/2019 17:54:35: serveur: localhost: 0.0470 ms
+Le 16/02/2019 17:54:36: serveur: localhost: 0.0507 ms
+Le 16/02/2019 17:54:37: serveur: localhost: 0.0530 ms
+Le 16/02/2019 17:55:01: serveur: localhost: 0.021 ms
+Le 16/02/2019 17:55:02: serveur: localhost: 0.0415 ms
+Le 16/02/2019 17:55:03: serveur: localhost: 0.0490 ms
+Le 16/02/2019 17:55:04: serveur: localhost: 0.0510 ms
+Le 16/02/2019 17:55:05: serveur: localhost: 0.0534 ms
+Le 16/02/2019 17:55:06: serveur: localhost: 0.055 ms
+Le 16/02/2019 17:55:07: serveur: localhost: 0.062 ms
+Le 16/02/2019 17:57:26: serveur: localhost: 0.02 ms
+Le 16/02/2019 17:58:15: serveur: localhost: 0.02 ms
+Le 16/02/2019 17:58:42: serveur: localhost: 0.021 ms
+Le 16/02/2019 17:58:51: serveur: localhost: 0.048 ms
+Le 16/02/2019 17:58:59: serveur: localhost: 0.021 ms
+Le 16/02/2019 18:01:05: serveur: localhost: 0.02 ms
+Le 16/02/2019 18:02:27: serveur: localhost: 0.03 ms
+Le 16/02/2019 18:02:28: serveur: localhost: 0.065 ms
+Le 16/02/2019 18:02:29: serveur: localhost: 0.0636 ms
+Le 16/02/2019 18:02:37: serveur: localhost: 0.021 ms
+Le 16/02/2019 18:02:38: serveur: localhost: 0.0430 ms
+Le 16/02/2019 18:02:39: serveur: localhost: 0.0496 ms
+Le 16/02/2019 18:02:40: serveur: localhost: 0.0587 ms
+Le 16/02/2019 18:02:41: serveur: localhost: 0.0598 ms
+Le 16/02/2019 18:02:42: serveur: localhost: 0.0575 ms
+Le 16/02/2019 18:02:43: serveur: localhost: 0.0598 ms
+Le 16/02/2019 18:02:44: serveur: localhost: 0.0551 ms
+Le 16/02/2019 18:02:45: serveur: localhost: 0.0553 ms
+Le 16/02/2019 18:02:46: serveur: localhost: 0.0513 ms
+Le 16/02/2019 18:02:47: serveur: localhost: 0.051 ms
+Le 16/02/2019 18:02:48: serveur: localhost: 0.054 ms
+Le 16/02/2019 18:02:49: serveur: localhost: 0.0625 ms
+Le 16/02/2019 18:02:50: serveur: localhost: 0.0668 ms
+Le 16/02/2019 18:02:51: serveur: localhost: 0.0666 ms
+Le 16/02/2019 18:02:52: serveur: localhost: 0.0668 ms
+Le 16/02/2019 18:02:53: serveur: localhost: 0.067 ms
+Le 16/02/2019 18:02:54: serveur: localhost: 0.0705 ms
+Le 16/02/2019 18:02:55: serveur: localhost: 0.0666 ms
+Le 16/02/2019 18:02:56: serveur: localhost: 0.0665 ms
+Le 16/02/2019 18:03:11: serveur: localhost: 0.023 ms
+Le 16/02/2019 18:03:12: serveur: localhost: 0.0435 ms
+Le 16/02/2019 18:03:13: serveur: localhost: 0.0499 ms
+Le 16/02/2019 18:03:14: serveur: localhost: 0.0535 ms
+Le 16/02/2019 18:03:15: serveur: localhost: 0.0554 ms
+Le 16/02/2019 18:03:16: serveur: localhost: 0.0566 ms
+Le 16/02/2019 18:03:17: serveur: localhost: 0.0633 ms
+Le 16/02/2019 18:03:18: serveur: localhost: 0.0626 ms
+Le 16/02/2019 18:03:19: serveur: localhost: 0.0628 ms
+Le 16/02/2019 18:03:20: serveur: localhost: 0.0625 ms
+Le 16/02/2019 18:03:21: serveur: localhost: 0.0623 ms
+Le 16/02/2019 18:03:22: serveur: localhost: 0.0623 ms
+Le 16/02/2019 18:03:23: serveur: localhost: 0.0625 ms
+Le 16/02/2019 18:03:24: serveur: localhost: 0.0565 ms
+Le 16/02/2019 18:03:25: serveur: localhost: 0.0563 ms
+Le 16/02/2019 18:03:26: serveur: localhost: 0.0566 ms
+Le 16/02/2019 18:03:27: serveur: localhost: 0.0568 ms
+Le 16/02/2019 18:03:28: serveur: localhost: 0.0568 ms
+Le 16/02/2019 18:03:29: serveur: localhost: 0.0565 ms
+Le 16/02/2019 18:03:30: serveur: localhost: 0.063 ms
+Le 16/02/2019 18:03:31: serveur: localhost: 0.063 ms
+Le 16/02/2019 18:03:32: serveur: localhost: 0.0623 ms
+Le 16/02/2019 18:03:33: serveur: localhost: 0.0623 ms
+Le 16/02/2019 18:03:34: serveur: localhost: 0.064 ms
+Le 16/02/2019 18:03:35: serveur: localhost: 0.0641 ms
+Le 16/02/2019 18:03:36: serveur: localhost: 0.0636 ms
+Le 16/02/2019 18:03:37: serveur: localhost: 0.0635 ms
+Le 16/02/2019 18:03:38: serveur: localhost: 0.0641 ms
+Le 16/02/2019 18:03:39: serveur: localhost: 0.0655 ms
+Le 16/02/2019 18:03:40: serveur: localhost: 0.0636 ms
+Le 16/02/2019 18:04:32: serveur: localhost: 0.033 ms
+Le 16/02/2019 18:04:33: serveur: localhost: 0.0595 ms
+Le 16/02/2019 18:04:34: serveur: localhost: 0.061 ms
+Le 16/02/2019 18:04:35: serveur: localhost: 0.0617 ms
+Le 16/02/2019 18:04:36: serveur: localhost: 0.062 ms
+Le 16/02/2019 18:04:37: serveur: localhost: 0.0661 ms
+Le 16/02/2019 18:04:38: serveur: localhost: 0.0706 ms
+Le 16/02/2019 18:04:39: serveur: localhost: 0.0668 ms
+Le 16/02/2019 18:04:40: serveur: localhost: 0.0665 ms
+Le 16/02/2019 18:04:41: serveur: localhost: 0.0663 ms
+Le 16/02/2019 18:04:42: serveur: localhost: 0.0663 ms
+Le 16/02/2019 18:04:43: serveur: localhost: 0.0623 ms
+Le 16/02/2019 18:04:44: serveur: localhost: 0.0626 ms
+Le 16/02/2019 18:04:45: serveur: localhost: 0.0626 ms
+Le 16/02/2019 18:04:46: serveur: localhost: 0.0628 ms
+Le 16/02/2019 18:04:47: serveur: localhost: 0.0626 ms
+Le 16/02/2019 18:04:48: serveur: localhost: 0.0616 ms
+Le 16/02/2019 18:04:49: serveur: localhost: 0.0616 ms
+Le 16/02/2019 18:04:50: serveur: localhost: 0.0616 ms
+Le 16/02/2019 18:04:51: serveur: localhost: 0.0615 ms
+Le 16/02/2019 18:04:52: serveur: localhost: 0.0615 ms
+Le 16/02/2019 18:04:53: serveur: localhost: 0.0615 ms
+Le 16/02/2019 18:04:54: serveur: localhost: 0.0621 ms
+Le 16/02/2019 18:04:55: serveur: localhost: 0.0618 ms
+Le 16/02/2019 18:04:56: serveur: localhost: 0.0618 ms
+Le 16/02/2019 18:04:57: serveur: localhost: 0.062 ms
+Le 16/02/2019 18:04:58: serveur: localhost: 0.0618 ms
+Le 16/02/2019 18:04:59: serveur: localhost: 0.0618 ms
+Le 16/02/2019 18:05:00: serveur: localhost: 0.062 ms
+Le 16/02/2019 18:05:01: serveur: localhost: 0.0621 ms
+Le 16/02/2019 18:05:02: serveur: localhost: 0.0621 ms
+Le 16/02/2019 18:05:03: serveur: localhost: 0.0626 ms
+Le 16/02/2019 18:05:04: serveur: localhost: 0.0628 ms
+Le 16/02/2019 18:05:05: serveur: localhost: 0.0628 ms
+Le 16/02/2019 18:05:06: serveur: localhost: 0.064 ms
+Le 16/02/2019 18:05:07: serveur: localhost: 0.064 ms
+Le 16/02/2019 18:05:09: serveur: localhost: 0.0643 ms
+Le 16/02/2019 18:05:10: serveur: localhost: 0.064 ms
+Le 16/02/2019 18:05:11: serveur: localhost: 0.0641 ms
+Le 16/02/2019 18:05:12: serveur: localhost: 0.0643 ms
+Le 16/02/2019 18:05:13: serveur: localhost: 0.0633 ms
+Le 16/02/2019 18:05:14: serveur: localhost: 0.0633 ms
+Le 16/02/2019 18:05:15: serveur: localhost: 0.0631 ms
+Le 16/02/2019 18:05:16: serveur: localhost: 0.0631 ms
+Le 16/02/2019 18:05:17: serveur: localhost: 0.063 ms
+Le 16/02/2019 18:05:18: serveur: localhost: 0.063 ms
+Le 16/02/2019 18:05:19: serveur: localhost: 0.0633 ms
+Le 16/02/2019 18:05:20: serveur: localhost: 0.0628 ms
+Le 16/02/2019 18:05:21: serveur: localhost: 0.0625 ms
+Le 16/02/2019 18:05:22: serveur: localhost: 0.0643 ms
+Le 16/02/2019 18:05:23: serveur: localhost: 0.0645 ms
+Le 16/02/2019 18:05:24: serveur: localhost: 0.0643 ms
+Le 16/02/2019 18:05:25: serveur: localhost: 0.0641 ms
+Le 16/02/2019 18:05:26: serveur: localhost: 0.0621 ms
+Le 16/02/2019 18:05:35: serveur: localhost: 0.035 ms
+Le 16/02/2019 18:05:36: serveur: localhost: 0.049 ms
+Le 16/02/2019 18:05:37: serveur: localhost: 0.0536 ms
+Le 16/02/2019 18:06:25: serveur: localhost: 0.034 ms
+Le 16/02/2019 18:06:26: serveur: localhost: 0.048 ms
+Le 16/02/2019 18:06:27: serveur: localhost: 0.0526 ms
+Le 16/02/2019 18:06:28: serveur: localhost: 0.0555 ms
+Le 16/02/2019 18:06:29: serveur: localhost: 0.0568 ms
+Le 16/02/2019 18:06:30: serveur: localhost: 0.0576 ms
+Le 16/02/2019 18:06:31: serveur: localhost: 0.0582 ms
+Le 16/02/2019 18:06:32: serveur: localhost: 0.0587 ms
+Le 16/02/2019 18:06:33: serveur: localhost: 0.0593 ms
+Le 16/02/2019 18:06:34: serveur: localhost: 0.0596 ms
+Le 16/02/2019 18:06:35: serveur: localhost: 0.0601 ms
+Le 16/02/2019 18:06:36: serveur: localhost: 0.0605 ms
+Le 16/02/2019 18:06:37: serveur: localhost: 0.0607 ms
+Le 16/02/2019 18:06:38: serveur: localhost: 0.0609 ms
+Le 16/02/2019 18:06:39: serveur: localhost: 0.0610 ms
+Le 16/02/2019 18:06:40: serveur: localhost: 0.0611 ms
+Le 16/02/2019 18:06:41: serveur: localhost: 0.0613 ms
+Le 16/02/2019 18:06:42: serveur: localhost: 0.0614 ms
+Le 16/02/2019 18:06:43: serveur: localhost: 0.0615 ms
+Le 16/02/2019 18:06:44: serveur: localhost: 0.0616 ms
+Le 16/02/2019 18:06:45: serveur: localhost: 0.0616 ms
+Le 16/02/2019 18:06:46: serveur: localhost: 0.0630 ms
+Le 16/02/2019 18:06:47: serveur: localhost: 0.0631 ms
+Le 16/02/2019 18:06:48: serveur: localhost: 0.0632 ms
+Le 16/02/2019 18:06:49: serveur: localhost: 0.0631 ms
+Le 16/02/2019 18:06:50: serveur: localhost: 0.0633 ms
+Le 16/02/2019 18:06:51: serveur: localhost: 0.0634 ms
+Le 16/02/2019 18:06:53: serveur: localhost: 0.0634 ms
+Le 16/02/2019 18:06:54: serveur: localhost: 0.0637 ms
+Le 16/02/2019 18:06:55: serveur: localhost: 0.0644 ms
+Le 16/02/2019 18:06:56: serveur: localhost: 0.0644 ms
+Le 16/02/2019 18:06:57: serveur: localhost: 0.0640 ms
+Le 16/02/2019 18:06:58: serveur: localhost: 0.0641 ms
+Le 16/02/2019 18:06:59: serveur: localhost: 0.0641 ms
+Le 16/02/2019 18:07:00: serveur: localhost: 0.0641 ms
+Le 16/02/2019 18:07:01: serveur: localhost: 0.0640 ms
+Le 16/02/2019 18:07:02: serveur: localhost: 0.0640 ms
+Le 16/02/2019 18:07:03: serveur: localhost: 0.0643 ms
+Le 16/02/2019 18:07:04: serveur: localhost: 0.0655 ms
+Le 16/02/2019 18:07:05: serveur: localhost: 0.0655 ms
+Le 16/02/2019 18:07:06: serveur: localhost: 0.0656 ms
+Le 16/02/2019 18:07:07: serveur: localhost: 0.0655 ms
+Le 16/02/2019 18:07:08: serveur: localhost: 0.0660 ms
+Le 16/02/2019 18:07:09: serveur: localhost: 0.0660 ms
+Le 16/02/2019 18:08:09: serveur: localhost: 0.021 ms
+Le 16/02/2019 18:08:10: serveur: localhost: 0.0415 ms
+Le 16/02/2019 18:08:11: serveur: localhost: 0.0486 ms
+Le 16/02/2019 18:08:12: serveur: localhost: 0.0522 ms
+Le 16/02/2019 18:08:13: serveur: localhost: 0.0544 ms
+Le 16/02/2019 18:08:14: serveur: localhost: 0.0553 ms
+Le 16/02/2019 18:08:15: serveur: localhost: 0.0564 ms
+Le 16/02/2019 18:08:16: serveur: localhost: 0.0571 ms
+Le 16/02/2019 18:08:17: serveur: localhost: 0.0576 ms
+Le 16/02/2019 18:08:18: serveur: localhost: 0.0583 ms
+Le 16/02/2019 18:08:19: serveur: localhost: 0.0590 ms
+Le 16/02/2019 18:08:20: serveur: localhost: 0.0594 ms
+Le 16/02/2019 18:08:21: serveur: localhost: 0.0596 ms
+Le 16/02/2019 18:08:22: serveur: localhost: 0.0598 ms
+Le 16/02/2019 18:08:24: serveur: localhost: 0.0600 ms
+Le 16/02/2019 18:08:25: serveur: localhost: 0.0601 ms
+Le 16/02/2019 18:08:26: serveur: localhost: 0.0602 ms
+Le 16/02/2019 18:08:27: serveur: localhost: 0.0604 ms
+Le 16/02/2019 18:08:28: serveur: localhost: 0.0605 ms
+Le 16/02/2019 18:08:29: serveur: localhost: 0.0606 ms
+Le 16/02/2019 18:08:30: serveur: localhost: 0.0628 ms
+Le 16/02/2019 18:08:31: serveur: localhost: 0.0640 ms
+Le 16/02/2019 18:08:32: serveur: localhost: 0.0640 ms
+Le 16/02/2019 18:08:33: serveur: localhost: 0.0640 ms
+Le 16/02/2019 18:08:34: serveur: localhost: 0.0640 ms
+Le 16/02/2019 18:08:35: serveur: localhost: 0.0642 ms
+Le 16/02/2019 18:08:36: serveur: localhost: 0.0647 ms
+Le 16/02/2019 18:08:37: serveur: localhost: 0.0647 ms
+Le 16/02/2019 18:09:03: serveur: localhost: 0.019 ms
+Le 16/02/2019 18:09:04: serveur: localhost: 0.0415 ms
+Le 16/02/2019 18:09:05: serveur: localhost: 0.0486 ms
+Le 16/02/2019 18:09:06: serveur: localhost: 0.0525 ms
+Le 16/02/2019 18:09:07: serveur: localhost: 0.0552 ms
+Le 16/02/2019 18:09:09: serveur: localhost: 0.0563 ms
+Le 16/02/2019 18:09:10: serveur: localhost: 0.0578 ms
+Le 16/02/2019 18:09:11: serveur: localhost: 0.0595 ms
+Le 16/02/2019 18:09:12: serveur: localhost: 0.0597 ms
+Le 16/02/2019 18:09:13: serveur: localhost: 0.0604 ms
+Le 16/02/2019 18:09:14: serveur: localhost: 0.0605 ms
+Le 16/02/2019 18:09:15: serveur: localhost: 0.0599 ms
+Le 16/02/2019 18:09:16: serveur: localhost: 0.0601 ms
+Le 16/02/2019 18:09:17: serveur: localhost: 0.0603 ms
+Le 16/02/2019 18:09:18: serveur: localhost: 0.0620 ms
+Le 16/02/2019 18:09:19: serveur: localhost: 0.0621 ms
+Le 16/02/2019 18:09:20: serveur: localhost: 0.0624 ms
+Le 16/02/2019 18:09:21: serveur: localhost: 0.0625 ms
+Le 16/02/2019 18:09:22: serveur: localhost: 0.0625 ms
+Le 16/02/2019 18:09:23: serveur: localhost: 0.0625 ms
+Le 16/02/2019 18:09:24: serveur: localhost: 0.0647 ms
+Le 16/02/2019 18:10:51: serveur: localhost: 0.021 ms
+Le 16/02/2019 18:10:52: serveur: localhost: 0.042 ms
+Le 16/02/2019 18:10:53: serveur: localhost: 0.0490 ms
+Le 16/02/2019 18:10:54: serveur: localhost: 0.0527 ms
