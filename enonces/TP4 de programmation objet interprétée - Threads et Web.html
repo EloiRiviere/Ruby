@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TP4 de programmation objet interprétée - Threads et Web</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="TPs mis à disposition le plus simplement possible pour mes étudiants.">
+    <link rel="canonical" href="https://berlin.iut.local/~frdelobe/ruby-2a/2019/02/18/TP4_ruby/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="TP4%20de%20programmation%20objet%20interpr%C3%A9t%C3%A9e%20-%20Threads%20et%20Web_fichiers/main.css">
+
+</head>
+
+
+  <body class="ruby-2a">
+
+    <header class="site-header">
+
+  <div class="wrap">
+
+    <a class="site-title" href="http://berlin.iut.local/~frdelobe/">Supports de cours pour l'IUT</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 15" enable-background="new 0 0 18 15" xml:space="preserve">
+          <path fill="#505050" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0
+            h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"></path>
+          <path fill="#505050" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484
+            h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"></path>
+          <path fill="#505050" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0
+            c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"></path>
+        </svg>
+      </a>
+      <div class="trigger">
+        
+          <a class="page-link" href="http://berlin.iut.local/~frdelobe/about/">About</a>
+        
+          
+        
+          
+        
+          <a class="page-link" href="http://berlin.iut.local/~frdelobe/categories/ruby-2a/">ruby-2a</a>
+        
+          <a class="page-link" href="http://berlin.iut.local/~frdelobe/categories/cpp-2a/">cpp-2a</a>
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrap">
+      <div class="post">
+
+  <header class="post-header">
+    <h1>TP4 de programmation objet interprétée - Threads et Web</h1>
+    <p class="meta">Feb 18, 2019</p>
+  </header>
+
+  <article class="post-content">
+  <h2 id="objectifs-du-tp">Objectifs du TP</h2>
+
+<ul>
+  <li>Manipuler des threads dans le but de paralléliser une application.</li>
+  <li>Utiliser la classe <code class="highlighter-rouge">Net::HTTP</code>.</li>
+  <li>Comprendre l’importance d’un bon password.</li>
+  <li>Apprendre à lire de la doc.</li>
+</ul>
+
+<h2 id="présentation-du-sujet">Présentation du sujet</h2>
+
+<p>Soit un serveur Web qui est protégé par une très classique (et un peu vieillotte) “Basic Authentication” (RFC2617 et suivante).
+Notre but, aujourd’hui, va être d’écrire un programme capable de trouver trois mots de passe pour le déverrouiller.</p>
+
+<p><em>Attention</em>: le but de cet exercice n’est évidemment pas de 
+vous inciter à faire des choses illégales mais de vous faire pratiquer 
+des notions utiles en Ruby et de vous faire comprendre les dangers d’un 
+mot de passe trop faible.</p>
+
+<h2 id="les-outils-fournis">Les outils fournis</h2>
+
+<p>Bonne nouvelle: le serveur vous est <a href="http://berlin.iut.local/~frdelobe/Data/server_obscured.rb">fourni</a>. Il s’agit d’une simple instance de WEBrick (un serveur web en Ruby), histoire de faire les choses simplement.
+Il se lance avec un simple <code class="highlighter-rouge">ruby server_obscured.rb</code>, et écoute à l’adresse <code class="highlighter-rouge">http://127.0.0.1:7654</code>. Lancé en local, nous ne gênerons pas le réseau même avec un trafic massif.
+La page à l’URL <code class="highlighter-rouge">http://localhost:7654/epreuve</code> est protégée par mot de passe. Le serveur a besoin d’un <a href="http://berlin.iut.local/~frdelobe/Data/dict/american-english">dictionnaire</a> pour changer les mots de passe.</p>
+
+<p>Mauvaise nouvelle: c’est vous qui écrivez le client qui va bruteforcer les serveurs.</p>
+
+<p>Bonne nouvelle: Ruby a (bien sûr) tout ce qu’il faut déjà écrit pour ça. Il vous suffira de lire la documentation de  <a href="http://ruby-doc.org/stdlib-2.2.0/libdoc/net/http/rdoc/Net/HTTP.html">Net::http</a>.
+ Attention, si vous travaillez avec du ruby1.9, l’URI fonctionne 
+légèrement différemment (le lien de la doc désigne du ruby 2.2): il vous
+ faudra extraire manuellement le path de l’URI (<code class="highlighter-rouge">req = Net::HTTP::Get.new(uri.path)</code>).</p>
+
+<h2 id="password-par-défaut">Password par défaut</h2>
+
+<p>Lancez un navigateur. Lancez le serveur. Allez sur la page du serveur avec le navigateur. Accédez à la page protégée.
+Le premier password à trouver est évident. Réfléchissez, trouvez…</p>
+
+<h2 id="mot-du-dictionnaire">Mot du dictionnaire</h2>
+
+<h3 id="version-simple">Version simple</h3>
+
+<p>À l’aide de <code class="highlighter-rouge">Net::http</code>, écrivez un client qui va tester tous les mots du <a href="http://berlin.iut.local/~frdelobe/Data/dict/american-english">dictionnaire</a>, les uns après les autres.</p>
+
+<h3 id="version-parallélisée">Version parallélisée.</h3>
+
+<ul>
+  <li>Écrivez une classe <code class="highlighter-rouge">Distributeur</code> dotée d’une méthode <code class="highlighter-rouge">get(n)</code> qui renvoie <code class="highlighter-rouge">n</code> candidats password à tester (pour le moment, des mots du dictionnaire).</li>
+  <li>Vérifiez que votre classe est <em>thread-safe</em> en ayant plusieurs thread qui font des <code class="highlighter-rouge">get(1)</code></li>
+  <li>Lancez plusieurs thread, qui vont  demander des mots au distributeurs, puis les tester, puis recommencer.</li>
+</ul>
+
+<h2 id="bruteforce">BruteForce</h2>
+
+<p>Maintenant, dotez votre programme de la capacité d’obtenir un mot composé de lettres minuscules et de chiffres.
+Le troisième des password du serveur est un mot composé de 6 lettres minuscules ou chiffres.</p>
+
+<p>Conseil: pour gérer l’énumération, regardez la méthode <code class="highlighter-rouge">Array#repeated_permutation</code>.</p>
+
+
+  </article>
+
+</div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrap">
+
+    <!--    <h2 class="footer-heading">Supports de cours pour l'IUT</h2> -->
+
+    <div class="footer-col-1 column">
+      <ul>
+        <li>Supports de cours pour l'IUT</li>
+        <li><a href="mailto:francois.delobel@uca.fr">francois.delobel@uca.fr</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col-2 column">
+      <ul>
+        
+        
+      </ul>
+    </div>
+
+    <div class="footer-col-3 column">
+      <p class="text">TPs mis à disposition le plus simplement possible pour mes étudiants.</p>
+    </div>
+
+  </div>
+
+</footer>
+
+
+    
+
+</body></html>
