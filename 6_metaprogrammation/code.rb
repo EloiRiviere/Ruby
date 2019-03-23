@@ -64,3 +64,40 @@ class Creature
     @pv <= 0
   end
 end
+
+require 'yaml'
+
+creatures = YAML.load_file('creatures.yml')
+
+# p creatures
+
+def add_method(klass, meth)
+  # p "j'ajoute une méthode à #{klass.class} : #{meth}"
+  klass.class_eval(meth)
+end
+
+creatures.each do |creature|
+  # p creature
+  klass = Class.new(Creature)
+  add_method(klass, "define_method(:tanker) { |degats| #{creature['tanker']} }")
+  add_method(klass, "define_method(:force) { #{creature['force']} }")
+  Object.const_set(creature["nom"], klass)
+end
+
+p Gobelin
+g =  Gobelin.new "gobelin",  17
+g.tanker 10
+g.force
+
+p Troll
+t = Troll.new "troll", 20
+p t.pdv
+p "Troll tank 10"
+t.tanker 10
+p t.pdv
+g.force
+
+p Arbre
+a = Arbre.new "arbre", 20
+a.tanker 10
+a.force
