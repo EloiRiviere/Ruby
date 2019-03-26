@@ -4,7 +4,7 @@
 # irb 0.9.6(09/06/30)
 
 # Commande d'exécution (dans le répertoire courant)
-#ruby katas.rb
+# ruby katas.rb
 
 ## Consigne : Ecrivez les fonctions décrites en dessous de leurs descriptions.
 ## Ne pas toucher les tests à la fin.
@@ -14,7 +14,6 @@
 def add(a, b)
   a + b
 end
-
 
 # Signature: cat(a, b)
 # Retourne la concaténation des deux chaines a & b
@@ -42,7 +41,7 @@ end
 # Indice : Regarder la documentation de array
 # Exemple : dot(['aut', 'eur', 'trice']) => 'aut·eur·rice'
 def dot(arr)
-  arr.join("·")
+  arr.join('·')
 end
 
 # Signature: minimum_length_4(s)
@@ -51,7 +50,7 @@ end
 # Exemple : minimum_length_4('I do not like potatoes') => 'like potatoes'
 def minimum_length_4(s)
   words = s.split.delete_if { |word| word.length <= 3 }
-  words.join(" ")
+  words.join(' ')
 end
 
 # Signature: dumbize(s)
@@ -60,14 +59,12 @@ end
 # Indice : Regarder la documentation de Array et Enumerable
 # Exemple : dumbize('Reduire les taxes reduit le chomage') => 'ReDuIrE LeS TaXeS ReDuIt lE ChOmAgE'
 def dumbize(s)
-  words = ""
-  s.chars.each_with_index { |char, index|
-    if index.even?
-      char = char.upcase
-    end
-    words = words + char
-  }
-    words
+  words = ''
+  s.chars.each_with_index do |char, index|
+    char = char.upcase if index.even?
+    words += char
+  end
+  words
 end
 
 # Signature: multiply_array(arr, n)
@@ -84,7 +81,7 @@ end
 # Exemple : sum([1, 2, -1, 3]) => 5
 def sum(arr)
   sum = 0
-  arr.each { |number| sum += number}
+  arr.each { |number| sum += number }
   sum
 end
 
@@ -93,8 +90,8 @@ end
 # (première lettre en majuscule)
 # Exemple : capitalize_words('thanks obama') => 'Thanks Obama'
 def capitalize_words(s)
-  words = s.split.each { |word| word.capitalize! }
-  words.join(" ")
+  words = s.split.each(&:capitalize!)
+  words.join(' ')
 end
 
 # Signature: enumeration(n)
@@ -113,12 +110,11 @@ end
 # { 'Ours' => 'Mammifère carnivore (ursidé)', 'Lapin' => 'Mammifère rongeur très prolifique' }
 def dictionnary(s)
   dictionary = {}
-  s.split("|").each { |part|
-    dictionary[part.split(":")[0]] = part.split(": ")[1]
-  }
+  s.split('|').each do |part|
+    dictionary[part.split(':')[0]] = part.split(': ')[1]
+  end
   dictionary
 end
-
 
 ## Tests qui valident le TP. Ne pas modifier sans quoi
 ## vous aurez 1000 ans de malheur sur au moins 32 générations.
@@ -140,77 +136,78 @@ end
 
 puts '==================================================='
 puts 'Katas to validate:'
-puts "==================================================="
+puts '==================================================='
 
 # Addition
 assert(%/add(1, 1)/, 2)
 assert(%/add(1, -1)/, 0)
 
-puts "---------------------------------------------------"
+puts '---------------------------------------------------'
 
 # Concaténation
 assert(%/cat('hello, ', 'world')/, 'hello, world')
 
-puts "---------------------------------------------------"
+puts '---------------------------------------------------'
 
 # Words
-assert(%/words('Je suis une patate')/, ['Je', 'suis', 'une', 'patate'])
-assert(%/words('   Vous ne passerez pas   ')/, ['Vous', 'ne', 'passerez', 'pas'])
+assert(%/words('Je suis une patate')/, %w[Je suis une patate])
+assert(%/words('   Vous ne passerez pas   ')/, %w[Vous ne passerez pas])
 
-puts "---------------------------------------------------"
+puts '---------------------------------------------------'
 
 # Upcase
 assert(%/(s = 'khaaan' ; upcase(s); s)/, 'KHAAAN')
 
-puts "---------------------------------------------------"
+puts '---------------------------------------------------'
 
 # Dot
 assert(%/dot(['aut', 'eur', 'rice'])/, 'aut·eur·rice')
 assert(%/dot(['La', 'réponse', 'est', 42])/, 'La·réponse·est·42')
 
-puts "---------------------------------------------------"
+puts '---------------------------------------------------'
 
 # Minimum length 4
 assert(%/minimum_length_4('I do not like dwarfs')/, 'like dwarfs')
 assert(%/minimum_length_4('And my axe')/, '')
 
-puts "---------------------------------------------------"
+puts '---------------------------------------------------'
 
 # Dumbize
 assert(%/dumbize('Jet fuels don\\'t melt steel beams')/, 'JeT FuElS DoN\'T MeLt sTeEl bEaMs')
 
-puts "---------------------------------------------------"
+puts '---------------------------------------------------'
 
 # Multiply array
 assert(%/multiply_array([1, 2, 3], 3)/, [3, 6, 9])
 
 assert(%/multiply_array([4, -2, 0], -2)/, [-8, 4, 0])
 
-puts "---------------------------------------------------"
+puts '---------------------------------------------------'
 
 # Sum
 assert(%/sum([1, 2, 3])/, 6)
 assert(%/sum([1, 2, -1, 3])/, 5)
 
-puts "---------------------------------------------------"
+puts '---------------------------------------------------'
 
 # Capitalize words
 assert(%/capitalize_words('Je ne connais pas la ponctuation')/, 'Je Ne Connais Pas La Ponctuation')
 
-puts "---------------------------------------------------"
+puts '---------------------------------------------------'
 
 # Enumeration
 assert(%/enumeration(3)/, [1, 2, 3])
 assert(%/enumeration(-1)/, [])
 
-puts "---------------------------------------------------"
+puts '---------------------------------------------------'
 
 # Dictionnary
 assert(
   %/dictionnary('Ours: Mammifère carnivore (ursidé)|Lapin: Mammifère rongeur très prolifique')/,
-  { 'Ours' => 'Mammifère carnivore (ursidé)', 'Lapin' => 'Mammifère rongeur très prolifique'})
+  'Ours' => 'Mammifère carnivore (ursidé)', 'Lapin' => 'Mammifère rongeur très prolifique'
+)
 
 # Message de félicitation
-puts "==================================================="
-puts "Every test passed..."
+puts '==================================================='
+puts 'Every test passed...'
 puts "#{ENV['USER']}, thou art the greatest!"
