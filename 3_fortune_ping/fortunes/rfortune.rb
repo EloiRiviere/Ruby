@@ -1,22 +1,31 @@
 #!/usr/bin/env ruby
 
-def lire
-  fortune = []
+def check_args
+  return true if ARGV.size == 1
+
+  STDERR.puts 'usage: rfortune.rb <fortune_file>'
+  false
+end
+
+def load
   reader = File.open(ARGV[0], 'r')
-  while block = reader.gets('%')
+  parser reader
+end
+
+def parser(reader)
+  fortune = []
+  while (block = reader.gets('%'))
     fortune.push(block)
   end
-  puts fortune[rand(fortune.length)][0..-2] + "\n"
+  fortune
+end
 
-  # File.open('chucknorris').each do |line|
-  #  if(line != "%\n")
-  #    fortune.push(line)
-  #  end
-  # end
-  # puts fortune[rand(fortune.length)]
-  # puts fortune
+def get_random(fortune_array)
+  fortune_array[rand(fortune_array.length)][0..-2] + "\n"
 end
-# Classe Rfortune
-class Rfortune
-  lire
-end
+
+exit unless check_args
+
+fortune_array = load
+
+puts get_random fortune_array

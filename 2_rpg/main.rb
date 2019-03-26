@@ -23,6 +23,4 @@ class Main
 
   puts les_joyeux_de_la_couronne
   les_joyeux_de_la_couronne.exploration
-
-
 end

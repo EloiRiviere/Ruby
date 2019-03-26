@@ -1,12 +1,11 @@
 #!/usr/bin/env ruby
-
 # Classe Pinger
 class Pinger
   TAILLE_MAX_TABLEAU = 20
 
-  def initialize
+  def initialize(host = ARGV[0])
     @lignes = []
-    @host = ARGV[0]
+    @host = host
   end
 
   def ping
@@ -16,9 +15,10 @@ class Pinger
         nettoyer_terminal
         next if index.zero?
 
-        moyenne = push(line)
-        affichage_terminal(moyenne)
-        fichier_sauvegarde(moyenne)
+        push(line)
+        affichage_terminal
+        fichier_sauvegarde
+        graphe
       end
     end
   end
@@ -26,13 +26,14 @@ class Pinger
   private
 
   def push(line)
-    @lignes.shift if @lignes.length > TAILLE_MAX_TABLEAU - 1
+    @lignes.shift if @lignes.length > TAILLE_MAX_TABLEAU
     @lignes.push(line.split(' ')[7].split('=')[1]).first.to_f
-    calcul_moyenne.to_s[0..5]
+    # puts '@lignes[]: ' + @lignes.to_s
+    @moyenne = calcul_moyenne.to_s[0..5]
   end
 
-  def affichage_terminal(moyenne)
-    puts 'Ping moyen sur le serveur ' + @host + ': ' + moyenne + ' ms'
+  def affichage_terminal
+    puts 'Ping moyen sur le serveur ' + @host + ': ' + @moyenne + ' ms'
     puts 'Ctrl + C pour arrêter'
   end
 
@@ -44,10 +45,10 @@ class Pinger
     somme / @lignes.length
   end
 
-  def fichier_sauvegarde(moy)
+  def fichier_sauvegarde
     File.open('moyenne_ping.txt', 'a') do |fichier|
       temps = date_precise
-      fichier.puts('Le ' + temps + ': serveur: ' + @host + ': ' + moy + ' ms')
+      fichier.puts("Le #{temps} : serveur: #{@host} : #{@moyenne} ms")
     end
   end
 
@@ -64,14 +65,19 @@ class Pinger
   end
 
   def convertisseur_s_f
+    # tableau_floats = []
+    # @lignes.each do |valeur|
+    #   tableau_floats.push valeur.to_f
+    # end
+    # tableau_floats
     @lignes.map(&:to_f)
   end
 
-  def graphe(serveur)
+  def graphe
     require 'gruff'
     g = Gruff::Line.new
     date = date_normale
-    g.title = 'Ping sur ' + serveur + ' le ' + date
+    g.title = 'Ping sur ' + @host + ' le ' + date
     g.labels = @lignes.each_with_index.to_h
     g.marker_font_size = 12
     g.data('Vitesse de ping en ms', convertisseur_s_f)

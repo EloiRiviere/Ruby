@@ -9,12 +9,17 @@ class Connection
 		uri = URI('http://localhost:7654/epreuve')
 		req = Net::HTTP::Get.new(uri)
 		req.basic_auth 'admin', pwd
-		res = Net::HTTP.start(uri.hostname, uri.port) {|http|
+		res = Net::HTTP.start(uri.hostname, uri.port) { |http|
 		  http.request(req)
 		}
-		puts "tested password :" + @pwd
-		puts res.body
-		puts "code de retour :" + res.code
+
+		# puts "Mot de passe testé: " + @pwd
+		# puts "Code de retour: " + res.code
+
+		if res.code.to_i == 200
+			puts res.body
+		end
+
 		return res.code.to_i
 	end
 end

@@ -8,12 +8,12 @@ class Compagnie
     File.open('personnages.don').each do |line|
       elements = line.split(',')
       case elements.first
-        when "Gobelin"
-          klass = Gobelin
-        when "Troll"
-          klass = Troll
+      when 'Gobelin'
+        klass = Gobelin
+      when 'Troll'
+        klass = Troll
       end
-      self.ajouter_crea(klass.new(elements[1], elements[2].to_i))
+      ajouter_crea(klass.new(elements[1], elements[2].to_i))
     end
   end
 
