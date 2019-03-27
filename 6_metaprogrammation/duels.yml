@@ -1,0 +1,16 @@
+- nom: "David contre Goliath"
+  duelistes:
+    - race: "Troll"
+      nom: "Goliath"
+      pv: 24
+    - race: "Gobelin"
+      nom: "David"
+      pv: 10
+- nom: "L'idiote du village"
+  duelistes:
+    - race: "Troll"
+      nom: "Nadine"
+      pv: 20
+    - race: "Arbre"
+      nom: "Chêne de la mairie"
+      pv: 600
