@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TP1 de programmation objet interprétée - Entrée en matière</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="TPs mis à disposition le plus simplement possible pour mes étudiants.">
+    <link rel="canonical" href="https://berlin.iut.local/~frdelobe/ruby-2a/2019/01/28/TP1_ruby/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="TP1%20de%20programmation%20objet%20interpr%C3%A9t%C3%A9e%20-%20Entr%C3%A9e%20en%20mati%C3%A8re_fichiers/main.css">
+
+</head>
+
+
+  <body class="ruby-2a">
+
+    <header class="site-header">
+
+  <div class="wrap">
+
+    <a class="site-title" href="http://berlin.iut.local/~frdelobe/">Supports de cours pour l'IUT</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 15" enable-background="new 0 0 18 15" xml:space="preserve">
+          <path fill="#505050" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0
+            h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"></path>
+          <path fill="#505050" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484
+            h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"></path>
+          <path fill="#505050" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0
+            c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"></path>
+        </svg>
+      </a>
+      <div class="trigger">
+        
+          <a class="page-link" href="http://berlin.iut.local/~frdelobe/about/">About</a>
+        
+          
+        
+          
+        
+          <a class="page-link" href="http://berlin.iut.local/~frdelobe/categories/ruby-2a/">ruby-2a</a>
+        
+          <a class="page-link" href="http://berlin.iut.local/~frdelobe/categories/cpp-2a/">cpp-2a</a>
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrap">
+      <div class="post">
+
+  <header class="post-header">
+    <h1>TP1 de programmation objet interprétée - Entrée en matière</h1>
+    <p class="meta">Jan 28, 2019</p>
+  </header>
+
+  <article class="post-content">
+  <h1 id="entrée-en-matière">Entrée en matière</h1>
+
+<p>Ce TP a pour but de vous faire pratiquer les bases du langage Ruby, en particulier :</p>
+
+<ul>
+  <li>Prendre en main l’environnement</li>
+  <li>Bases de la bibliothèque standard</li>
+  <li>Méthodes</li>
+  <li>Hash et Map</li>
+  <li>Une façon de tester</li>
+  <li>Apprendre à mélanger intuition et parcours de la documentation pour découvrir le Ruby que l’on ignore encore</li>
+</ul>
+
+<p>Ruby est un langage 100% objet, tout est objet, même nil (null) ! 
+Mais avant de se lancer dans de la programmation objet, assurons nous 
+d’avoir bien les bases : Amusons avec des scripts classiques, Ruby 
+permet ça aussi !</p>
+
+<h2 id="outils">Outils</h2>
+
+<ol>
+  <li>Votre éditeur de texte/IDE préféré! Pas de guerre de religion ici!</li>
+  <li><em>irb</em> : le débogueur ruby. Idéal pour tester directement des commandes. Peut aussi servir à déboguer.</li>
+  <li><em>ri</em>: l’aide locale de ruby, plus rapide que le réseau mais moins jolie (exemple <code class="highlighter-rouge">ri String#scan</code>)</li>
+  <li>Une ancienne version d’un bon livre sur ruby a été ouverte. Vous la trouverez <a href="http://ruby-doc.com/docs/ProgrammingRuby/">là</a>. Elle ne couvre pas tous les ajouts récents mais toute la base du langage est toujours bonne, et bien expliquée.</li>
+  <li>Doc de référence: l’officielle sur <a href="https://ruby-doc.org/core-2.6/">ruby-doc.org</a>. Barre de recherche en haut à droite.</li>
+  <li>Un <a href="http://evc-cit.info/cit020/beginning-programming/index.html">cours de programmation</a> écrit avec Ruby comme langage support.</li>
+</ol>
+
+<p>Une rapide présentation des IDE ruby est disponible à la fin de ce 
+document… Si vous avez un IDE préféré, il devrait faire l’affaire.</p>
+
+<h2 id="1---katas-marrants">1 - Katas marrants</h2>
+
+<blockquote>
+  <p>De la même manière que pour un pratiquant d’art martiaux, les katas
+ sont des exercices que font les développeurs pour améliorer leurs 
+compétences via répétition et entraînement.</p>
+</blockquote>
+
+<p>Ouvrez le fichier <a href="http://berlin.iut.local/~frdelobe/Data/katas.rb">katas.rb</a>, lisez les consignes, remplissez les trous et attention à la malédiction en bas du fichier.</p>
+
+<p>Arrêtez vous quand vous voyez le message dans votre console qui vous dit que vous êtes victorieux.</p>
+
+<h2 id="2---calcul-de-fréquences">2 - Calcul de fréquences</h2>
+<h3 id="consignes">Consignes</h3>
+<p>Le but de cet application, c’est de prendre un nom de fichier en 
+paramètre et de ressortir les fréquences (nombre d’occurence d’un mot 
+par rapport au nombre de mots total) des 20 mots les plus courants du 
+fichier, en ignorant les mots de moins de 3 caractères et bien sûr les 
+ponctuations.</p>
+
+<p>On veut donc pouvoir la lancer comme suit sur le fichier exemple  <a href="http://berlin.iut.local/~frdelobe/Data/french_text.txt">french_text.txt</a>:</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$&gt;</span>ruby frequency.rb french_text.txt
+</code></pre></div></div>
+
+<p>Et avoir le résultat suivant :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>corbeau: 0.029
+que: 0.022
+vous: 0.022
+tes: 0.022
+tre: 0.015
+bec: 0.015
+fromage: 0.015
+renard: 0.015
+peu: 0.015
+monsieur: 0.015
+sans: 0.015
+votre: 0.015
+ces: 0.015
+sur: 0.007
+arbre: 0.007
+perch: 0.007
+tenait: 0.007
+son: 0.007
+par: 0.007
+odeur: 0.007
+</code></pre></div></div>
+
+<p>Attention, si on ne passe aucun paramètre au programme, un message d’erreur doit s’afficher sur le flux d’erreur (<code class="highlighter-rouge">$stderr</code>). Exemple :</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$&gt;ruby frequency.rb
+usage: frequency.rb &lt;text_file&gt;
+</code></pre></div></div>
+
+<h3 id="quelques-pistes">Quelques pistes…</h3>
+
+<p>L’utilisation de <a href="https://docs.ruby-lang.org/en/2.0.0/Hash.html">Hash</a>
+ pour le comptage des mots est particulièrement utile. Surtout si vous 
+l’initialisez avec une valeur par défaut en cas de clef absente…</p>
+
+<p>On ne peut que vous conseiller de séparer l’application en plusieurs responsabilités :</p>
+
+<ul>
+  <li>Lecture du fichier texte</li>
+  <li>Nettoyage du texte (pour la ponctuation par exemple)</li>
+  <li>Séparation du texte en mots</li>
+  <li>Comptage des occurences des mots</li>
+  <li>Calcul des fréquences (normalisation des occurences)</li>
+  <li>Tri et affichage des 20 premiers résultats</li>
+  <li>Programme principal qui associe les différentes responsabilités ensemble</li>
+</ul>
+
+<p>Pour nettoyer le texte, vous pouvez regarder ce que fait <code class="highlighter-rouge">String#gsub(motif, remplacement)</code>. Un motif peut être une expression rationnelle Ruby (<code class="highlighter-rouge">/^lapino?s/</code> par exemple).</p>
+
+<p>Cela vous permettra d’écrire plusieurs petites fonctions que vous 
+pourrez tester au fur et à mesure. N’hésitez pas à vous référer aux 
+katas écrits avant.</p>
+
+<h3 id="variante-si-vous-avez-été-très-rapide-sur-le-précédent">Variante (si vous avez été très rapide sur le précédent)</h3>
+
+<p>Ajoutez une option -l à votre programme qui permet de calculer la fréquence des différentes lettres du texte.</p>
+
+<h2 id="3---détection-de-langues">3 - Détection de langues</h2>
+
+<p>On vous fournit un fichier JSON <a href="http://berlin.iut.local/~frdelobe/Data/stop_words.json">stop_words.json</a> qui contient les <a href="https://fr.wikipedia.org/wiki/Mot_vide">mots vides</a> (ou <em>stopwords</em>) les plus courants dans les langues les plus courantes.</p>
+
+<p>Les mots sont au format qui suit :</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"&lt;label de la langue&gt;"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="s2">"&lt;mot vide 1&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"&lt;mot vide 2&gt;"</span><span class="p">,</span><span class="w">
+    </span><span class="err">...</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="err">...</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>L’idée est de détecter quelle langue est utilisée dans un texte en 
+fonction de ces mots vides. Ainsi, si le texte a la plus grande 
+intersection avec des mots vides de la langue labellisée ‘fr’ (french), 
+on pourra supposer que le texte est en Français.</p>
+
+<p>L’algorithme est le suivant :</p>
+
+<ul>
+  <li>charger le fichier cible, mettre les mots dans un tableau, supprimer les doublons</li>
+  <li>pour chaque langue de la référence
+    <ul>
+      <li>récupérer la liste des mots vide de la langue courante</li>
+      <li>calculer l’intersection entre les mots vides de la langue courante et les mots du texte</li>
+      <li>retenir la taille de l’intersection pour la langue courante (un conseil ici, utilisez un hash pour associer langue et taille)</li>
+    </ul>
+  </li>
+  <li>fin pour</li>
+</ul>
+
+<p>trouver le maximum des intersections calculées
+afficher le label du maximum des intersections</p>
+
+<p>On va fournir un texte à analyser via un paramètre de l’application :</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$&gt;ruby detect_language.rb french_text.txt
+</code></pre></div></div>
+
+<p>Et on s’attendra au résultat suivant :</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Detected language: 'fr'
+</code></pre></div></div>
+
+<p>Attention, si on ne passe aucun paramètre au programme, je voudrais un message qui averti l’utilisateur. Exemple :</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$&gt;ruby detect_language.rb
+usage: detect_language.rb &lt;text_file&gt;
+</code></pre></div></div>
+
+<p>Testez sur les fichiers <a href="http://berlin/~frdelobe/Data/french_text.txt">french_text.txt</a>, <a href="http://berlin/~delobel/Data/english_text.txt">english_text.txt</a> et <a href="http://berlin/~delobel/Data//german_text.txt">german_text.txt</a>!</p>
+
+<h3 id="quelques-pistes-1">Quelques pistes</h3>
+<p>On peut vous conseiller de séparer votre code en responsabilités différentes via des méthodes :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nom de la méthode</th>
+      <th>Paramètres</th>
+      <th>Détail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>load_reference</td>
+      <td>reference_file_path</td>
+      <td>Méthode qui renvoie le fichier JSON chargé dans un hash</td>
+    </tr>
+    <tr>
+      <td>load_text_file</td>
+      <td>text_file_path</td>
+      <td>Méthode qui fait le chargement, le nettoyage et la séparation du fichier texte en mots</td>
+    </tr>
+    <tr>
+      <td>intersection_sizes</td>
+      <td>reference, text_words</td>
+      <td>Méthode qui prend la référence et calcul l’intersection entre la liste de mots d’une langue et les mots du texte</td>
+    </tr>
+    <tr>
+      <td>detect_language</td>
+      <td>reference, text_words</td>
+      <td>Méthode qui appelle la méthode précédente et parcours les intersections pour trouver la plus grande et retourne son nom</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>Attention lors de la lecture du fichier texte, se référer au deuxième exercice</li>
+  <li>Un opérateur magique sur <a href="https://docs.ruby-lang.org/en/2.0.0/Array.html">Array</a> existe… Il s’écrit comme le ‘ET’ binaire</li>
+  <li>Ne vous laissez pas intimider par le <a href="http://ruby-doc.org/stdlib-2.0.0/libdoc/json/rdoc/JSON.html">JSON</a>,
+ vous n’avez qu’une méthode statique à appeler sur le module pour parser
+ le document. Cela vous renvoie un Hash qu’il vous suffira de parcourir.</li>
+  <li>Pour charger une dépendance de Ruby, on utilise <code class="highlighter-rouge">require 'une_dependance'</code>.  <code class="highlighter-rouge">une_dependance</code>
+ est un fichier ruby qui peut être dans l’installation standard de Ruby 
+(C’est le cas de JSON), ou une gemme (le système de paquets de ruby que 
+l’on verra par la suite).</li>
+</ul>
+
+<h2 id="ide">IDE</h2>
+
+<p>Les goûts et les couleurs, ça ne se discute pas: il y a rarement 
+d’IDE qui fasse l’unanimité pour un langage ouvert. Voici néanmoins 
+quelques possibilités.</p>
+
+<ul>
+  <li>Vim colore et indente vite.</li>
+  <li>Geany est un éditeur de texte tout simple mais qui fait bien son boulot.</li>
+  <li>Eclipse, Faut être patient au lancement, comme toujours, mais le 
+plugin est correct (Partie de dltk - Dynamic Language ToolKit, qui gère 
+aussi d’autres langages interprétés).</li>
+  <li><a href="https://atom.io/">Atom</a> est un éditeur libre, développé par github, pas packagé sur debian.</li>
+  <li><a href="http://www.aptana.com/">Aptana</a>, un IDE basé sur 
+éclipse. Bonnes capacités aussi pour Ruby On Rails. Disponible aussi 
+sous forme indépendante (un package tout pret).</li>
+  <li>Orable a poussé Netbeans à se concentrer sur Java, mais la 
+communauté a repris le développement d’un plugin Ruby &amp; Rails 
+disponible <a href="http://plugins.netbeans.org/plugin/38549">sur le site officiel</a></li>
+  <li><a href="http://www.jetbrains.com/ruby/index.html">RubyMine</a>, un IDE dédié à Ruby et Rails, par JetBrains, qui fait aussi IntelliJ, PHPStorm, Clion, etc.</li>
+  <li><a href="http://www.sapphiresteel.com/Products/Ruby-In-Steel/Ruby-In-Steel-Developer-Overview.html">Sapphire</a>, un IDE basé sur visual studio.</li>
+</ul>
+
+
+  </article>
+
+</div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrap">
+
+    <!--    <h2 class="footer-heading">Supports de cours pour l'IUT</h2> -->
+
+    <div class="footer-col-1 column">
+      <ul>
+        <li>Supports de cours pour l'IUT</li>
+        <li><a href="mailto:francois.delobel@uca.fr">francois.delobel@uca.fr</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col-2 column">
+      <ul>
+        
+        
+      </ul>
+    </div>
+
+    <div class="footer-col-3 column">
+      <p class="text">TPs mis à disposition le plus simplement possible pour mes étudiants.</p>
+    </div>
+
+  </div>
+
+</footer>
+
+
+    
+
+</body></html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TP7, un peu de rab pour ceux qui ont fini leur assiette.</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="TPs mis à disposition le plus simplement possible pour mes étudiants.">
+    <link rel="canonical" href="https://berlin.iut.local/~frdelobe/ruby-2a/2019/03/20/TP7_ruby/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="TP7,%20un%20peu%20de%20rab%20pour%20ceux%20qui%20ont%20fini%20leur%20assiette_fichiers/main.css">
+
+</head>
+
+
+  <body class="ruby-2a">
+
+    <header class="site-header">
+
+  <div class="wrap">
+
+    <a class="site-title" href="http://berlin.iut.local/~frdelobe/">Supports de cours pour l'IUT</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 15" enable-background="new 0 0 18 15" xml:space="preserve">
+          <path fill="#505050" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0
+            h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"></path>
+          <path fill="#505050" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484
+            h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"></path>
+          <path fill="#505050" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0
+            c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"></path>
+        </svg>
+      </a>
+      <div class="trigger">
+        
+          <a class="page-link" href="http://berlin.iut.local/~frdelobe/about/">About</a>
+        
+          
+        
+          
+        
+          <a class="page-link" href="http://berlin.iut.local/~frdelobe/categories/ruby-2a/">ruby-2a</a>
+        
+          <a class="page-link" href="http://berlin.iut.local/~frdelobe/categories/cpp-2a/">cpp-2a</a>
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrap">
+      <div class="post">
+
+  <header class="post-header">
+    <h1>TP7, un peu de rab pour ceux qui ont fini leur assiette.</h1>
+    <p class="meta">Mar 20, 2019</p>
+  </header>
+
+  <article class="post-content">
+  <h2 id="finissez-le-tp-sur-la-réflexivité-semaine-6">Finissez le TP sur la réflexivité (semaine 6)</h2>
+
+<p>Tout est dans le titre.</p>
+
+<h2 id="si-vous-avez-fini-le-tp-précédent-sur-la-réflexivité">Si vous avez fini le TP précédent sur la réflexivité</h2>
+
+<p>Je vous propose au choix de partir sur une des deux pistes suivantes (à votre guise):</p>
+
+<ul>
+  <li>Découvrir le système de gemmes de Ruby. Les gemmes sont le système
+ de paquet logiciel propre à ruby qui permet d’installer et de mettre à 
+jour des “bibliothèques” Ruby disponibles sur des dépôts.</li>
+  <li>Faire un peu d’interface graphique.</li>
+  <li>Coder un exploit pour Metasploit, un outil de PenTesting.</li>
+</ul>
+
+<h3 id="installer-des-gemmes">Installer des gemmes</h3>
+
+<ul>
+  <li><a href="https://www.ruby-lang.org/en/libraries/">Introduction</a>.</li>
+  <li><a href="https://guides.rubygems.org/command-reference/">Doc officielle de référence</a></li>
+  <li>Bien faire une installation locale (faut chercher un peu :).</li>
+  <li>Aide: Il vous faut apprendre à votre système comment accéder à l’extérieur
+(dans le cadre de l’IUT, un proxy web).</li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export HTTPS_PROXY=193.49.118.36:8080
+export HTTP_PROXY=193.49.118.36:8080
+</code></pre></div></div>
+
+<ul>
+  <li>Ragarder l’option <code class="highlighter-rouge">--user-install</code></li>
+</ul>
+
+<h3 id="interface-graphique-et-ruby">Interface graphique et Ruby</h3>
+
+<ul>
+  <li>Ruby est un langage de programmation, pas une bibliothèque de 
+primitives graphiques. Mais il permet d’utiliser de multiples 
+quadriciels graphiques existants, parmi lesquel Qt, WxWidget, GTk…</li>
+  <li>Vocabulaire: on appelle <em>binding</em> une bibliothèque dans un langage qui ne sert qu’à masquer les appels vers une autre bibliothèque dans un autre langage.</li>
+  <li>QtRuby est installé sur vos machines de TP.</li>
+  <li><a href="https://techbase.kde.org/Development/Languages/Ruby">Tutorial</a> chez KDE.</li>
+  <li>Si vous voulez développer rapidement, je vous invite à lancer le <code class="highlighter-rouge">designer-qt4</code> de Qt, pour générer une UI (User Interface) et à apprendre comment l’exploiter en Ruby (UiLoader).</li>
+  <li><a href="https://www.darshancomputing.com/qt4-qtruby-tutorial/">Le tuto de Qt4 traduit en Ruby</a>. Ça colle trop à la vision <em>C++</em> des choses mais ça peut servir.</li>
+</ul>
+
+<h3 id="ruby-et-les-libs">Ruby et les libs</h3>
+
+<p>Vous voulez vous interfacer avec un calendrier en CalDav ou en Ldap, 
+générer des fichiers pdf, envoyer des mail, fair des bots IRC, lire des 
+QRcode, détecter le lpam, parser des flux RSS ou du JSON? Regardez ce 
+qui est disponible sur <a href="https://www.ruby-toolbox.com/">The Ruby Toolbox</a> et évaluer les projets en fonction de leur dynamisme ou du nombre de les utilisateurs.</p>
+
+<h3 id="gérer-une-architecture-ruby-complexe">Gérer une architecture Ruby complexe:</h3>
+
+<ul>
+  <li>Les <em>gems</em> pour installer &amp; mettre à jour les paquets</li>
+  <li><em>Rake</em>, le pendant de make en Ruby.</li>
+  <li><em>rvm</em> et <em>rbenv</em> pour gérer des versions différentes de l’intépréteur et des outils.</li>
+  <li><em>Bundler</em> pour indiquer les dépendances d’un projet</li>
+  <li><em>rspec</em> et <em>cucumber</em> pour le TDD.</li>
+</ul>
+
+<h3 id="coder-un-exploit-pour-metasploit">Coder un exploit pour Metasploit</h3>
+
+<ul>
+  <li><a href="https://www.metasploit.com/">Metasploit</a> est un outil 
+populaire de pentesting (audit de sécurité). Ses exploits (les modules 
+qui détectent une faille donnée) sont écrits en Ruby.</li>
+  <li>Vous pouvez écrire vos <a href="https://github.com/rapid7/metasploit-framework/wiki/Setting-Up-a-Metasploit-Development-Environment">propres exploits</a>.</li>
+  <li>A noter: je n’ai bien sûr pas installé  de metasploit sur les machines pédagogiques.</li>
+</ul>
+
+
+  </article>
+
+</div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrap">
+
+    <!--    <h2 class="footer-heading">Supports de cours pour l'IUT</h2> -->
+
+    <div class="footer-col-1 column">
+      <ul>
+        <li>Supports de cours pour l'IUT</li>
+        <li><a href="mailto:francois.delobel@uca.fr">francois.delobel@uca.fr</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col-2 column">
+      <ul>
+        
+        
+      </ul>
+    </div>
+
+    <div class="footer-col-3 column">
+      <p class="text">TPs mis à disposition le plus simplement possible pour mes étudiants.</p>
+    </div>
+
+  </div>
+
+</footer>
+
+
+    
+
+</body></html>
