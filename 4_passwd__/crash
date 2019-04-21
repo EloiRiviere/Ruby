@@ -1,0 +1,18 @@
+64100 passwd tested
+/usr/lib/ruby/2.3.0/net/protocol.rb:211:in `write': Connection reset by peer (Errno::ECONNRESET)
+        from /usr/lib/ruby/2.3.0/net/protocol.rb:211:in `write0'
+        from /usr/lib/ruby/2.3.0/net/protocol.rb:185:in `block in write'
+        from /usr/lib/ruby/2.3.0/net/protocol.rb:202:in `writing'
+        from /usr/lib/ruby/2.3.0/net/protocol.rb:184:in `write'
+        from /usr/lib/ruby/2.3.0/net/http/generic_request.rb:334:in `write_header'
+        from /usr/lib/ruby/2.3.0/net/http/generic_request.rb:127:in `exec'
+        from /usr/lib/ruby/2.3.0/net/http.rb:1435:in `block in transport_request'
+        from /usr/lib/ruby/2.3.0/net/http.rb:1434:in `catch'
+        from /usr/lib/ruby/2.3.0/net/http.rb:1434:in `transport_request'
+        from /usr/lib/ruby/2.3.0/net/http.rb:1407:in `request'
+        from /home/eloi/Documents/Ruby/4_passwd__/connection.rb:13:in `block in connecter'
+        from /usr/lib/ruby/2.3.0/net/http.rb:853:in `start'
+        from /usr/lib/ruby/2.3.0/net/http.rb:584:in `start'
+        from /home/eloi/Documents/Ruby/4_passwd__/connection.rb:12:in `connecter'
+        from brute_force.rb:13:in `attaque'
+        from brute_force.rb:56:in `block (3 levels) in <class:BruteForce>'
